@@ -1,4 +1,4 @@
-df = pd.read_csv("credit.csv")   #loading data
+df = pd.read_csv("credit1.zip")   #loading data
 df.info()
 df.isnull().sum() 
 df.describe() #checking statistical info
