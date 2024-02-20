@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Credit Score Prediction</title>
+    <link rel="stylesheet" href="\static\style.css">
+</head>
+<body background="\static/images/creditscore.jpeg">
+    <div class="container">
+        <h1>Credit Score Prediction</h1>
+        <form action="/result" method="post" id="input_form">
+            <label for="Annual_Income">Annual_Income:</label>
+            <select id="Annual_Income" name="Annual_Income" required>
+                <option value="0.2">0 - 30,000</option>
+                <option value="0.4">30,000 - 60,000</option>
+                <option value="0.6">60,000 - 90,000</option>
+                <option value="0.8">90,000 - 1,20000</option>
+                <option value="1">1,20000 - 1,50,000</option>
+                </select><br>
+            <label for="Monthly_Inhand_Salary">Monthly_Inhand_Salary:</label>
+            <select id="Monthly_Inhand_Salary" name="Monthly_Inhand_Salary" required>
+                <option value="0.2">0 - 2,500</option>
+                <option value="0.4">2,500 - 5,000</option>
+                <option value="0.6">5,000 - 8000</option>
+                <option value="0.8">8000 - 10,500</option>
+                <option value="1">10,500 - 14,000</option>
+                </select><br>
+
+
+            <label for="Num_Bank_Accounts">Num_Bank_Accounts:</label>
+            <input type="text" id="Num_Bank_Accounts" name="Num_Bank_Accounts" required><br>
+
+            <label for="Num_Credit_Card">Num_Credit_Card:</label>
+            <input type="text" id="Num_Credit_Card" name="Num_Credit_Card" required><br>
+
+            <label for="Interest_Rate">Interest_Rate:</label>
+            <input type="text" id="Interest_Rate" name="Interest_Rate" required><br>
+
+            <label for="Num_of_Loan">Num_of_Loan:</label>
+            <input type="text" id="Num_of_Loan" name="Num_of_Loan" required><br>
+
+            <label for="Delay_from_due_date">Delay_from_due_date:</label>
+            <input type="text" id="Delay_from_due_date" name="Delay_from_due_date" required><br>
+
+            <label for="Num_of_Delayed_Payment">Num_of_Delayed_Payment:</label>
+            <input type="text" id="Num_of_Delayed_Payment" name="Num_of_Delayed_Payment" required><br>
+
+            <label for="Credit_Mix">Credit_Mix:</label>
+            <input type="radio" id="Bad" name="Credit_Mix" value="0" required> 0
+            <input type="radio" id="Standard" name="Credit_Mix" value="1" required> 1
+            <input type="radio" id="Good" name="Credit_Mix" value="2" required> 2 <br>
+
+            <label for="Outstanding_Debt">Outstanding_Debt:</label>
+            <select id="Outstanding_Debt" name="Outstanding_Debt" required>
+            <option value="0.2">0 - 500</option>
+            <option value="0.4">500 - 1,500</option>
+            <option value="0">1,500 - 2,500</option>
+            <option value="1">2,500 - 3,500</option>
+            <option value="2">3,500 - 4,000</option>
+            </select><br>
+            
+
+            <label for="Credit_History_Age">Credit_History_Age:</label>
+            <select id="Credit_History_Age" name="Credit_History_Age" required>
+            <option value="0.2">0 - 60</option>
+            <option value="0.4">60 - 160</option>
+            <option value="0.6">160 - 260</option>
+            <option value="0.8">260 - 360</option>
+            <option value="1">360 - 450</option>
+            </select><br>
+
+            <label for="Monthly_Balance">Monthly_Balance:</label>
+            <select id="Monthly_Balance" name="Monthly_Balance" required>
+            <option value="0.2">0 - 100</option>
+            <option value="0.4">100 - 300</option>
+            <option value="0.6">300 - 450</option>
+            <option value="0.8">450 - 600</option>
+            <option value="1">600 - 800</option>
+            </select><br>
+
+
+
+            <button id="submit" type="submit">PREDICT</button>
+            <button id="reset" type="reset">RESET</button>
+        </form>
+    </div>
+</body>
+</html>
