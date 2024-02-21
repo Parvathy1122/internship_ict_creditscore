@@ -14,8 +14,11 @@ def home():
 def predict():
     if request.method == 'POST':
         
-        model = pickle.load('model70.pkl','rb')
-        
+        #model = pickle.load('model70.pkl','rb')
+        # create file object with permissions
+        with open('/workspaces/internship_ict_creditscore/model70.pkl', 'rb') as f:
+    # load using pickle de-serializer
+            model = pickle.load(f)
     
         
         # Get feature inputs from the form
