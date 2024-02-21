@@ -14,7 +14,7 @@ def home():
 def predict():
     if request.method == 'POST':
         
-        model = joblib.load('model70.pkl')
+        model = pickle.load('model70.pkl','rb')
         
     
         
