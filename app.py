@@ -14,7 +14,7 @@ def home():
 def predict():
     if request.method == 'POST':
         
-        model = joblib.load('credmodel.joblib')
+        model = joblib.load('model70.pkl')
         
     
         
